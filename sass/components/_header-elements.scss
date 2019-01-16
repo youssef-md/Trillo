@@ -37,7 +37,7 @@
   &__button {
     border: none;
     background-color: var(--color-grey-light-2);
-
+    
     &:focus {
       outline: none;
       background-color: var(--color-grey-light-3);
@@ -57,6 +57,21 @@
 
 .user-nav {
   background-color: greenyellow;
+  display: flex;
+  align-items: center;
+
+  align-self: stretch; // stretch in Y to match header height
+
+  & > * { //all direct children from user-nav(icon-box and user)
+    padding: 0 2rem;
+    cursor: pointer;
+  }
+
+  & > *:hover { 
+    background-color: var(--color-grey-light-2);
+    height: 100%;
+  }
+
 
   &__icon-box {
 
