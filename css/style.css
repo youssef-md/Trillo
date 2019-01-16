@@ -67,6 +67,20 @@ body {
 .search {
   background-color: orangered;
   flex: 0 0 40%; }
+  .search__input {
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 10rem;
+    width: 90%;
+    animation: all .3s; }
+    .search__input:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3); }
   .search__icon {
     height: 2rem;
     width: 2rem; }
