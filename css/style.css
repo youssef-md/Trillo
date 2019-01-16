@@ -42,6 +42,7 @@ body {
   box-shadow: var(--shadow-dark); }
 
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
   border-bottom: var(--color-grey-light-2);
@@ -65,7 +66,6 @@ body {
   margin-left: 3rem; }
 
 .search {
-  background-color: orangered;
   flex: 0 0 40%;
   display: flex;
   align-items: center;
@@ -80,11 +80,14 @@ body {
     border-radius: 10rem;
     width: 90%;
     transition: all .3s;
-    margin-right: -3rem; }
+    margin-right: -3.5rem; }
     .search__input:focus {
       outline: none;
       width: 100%;
       background-color: var(--color-grey-light-3); }
+    .search__input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-dark-3); }
   .search__button {
     border: none;
     background-color: var(--color-grey-light-2); }
