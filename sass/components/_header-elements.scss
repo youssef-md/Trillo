@@ -7,6 +7,10 @@
   background-color: orangered;
   flex: 0 0 40%;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &__input {
     font-family: inherit;
     color: inherit;
@@ -16,7 +20,8 @@
     padding: .7rem 2rem;
     border-radius: 10rem;
     width: 90%;
-    animation: all .3s;
+    transition: all .3s;
+    margin-right: -3rem;
 
     &:focus {
       outline: none;
@@ -26,12 +31,23 @@
   }
 
   &__button {
+    border: none;
+    background-color: var(--color-grey-light-2);
 
+    &:focus {
+      outline: none;
+      background-color: var(--color-grey-light-3);
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
   }
 
   &__icon {
     height: 2rem;
     width: 2rem;
+    fill: var(--color-grey-dark-3);
   }
 }
 
