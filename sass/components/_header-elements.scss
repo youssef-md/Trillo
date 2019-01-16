@@ -1,8 +1,11 @@
 .logo {
   height: 3.25rem;
+  margin-left: 3rem;
 }
 
 .search {
+  background-color: orangered;
+  flex: 0 0 40%;
 
   &__input {
 
@@ -19,6 +22,7 @@
 }
 
 .user-nav {
+  background-color: greenyellow;
 
   &__icon-box {
 
