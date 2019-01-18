@@ -20,11 +20,13 @@
     width: 3px;
     background-color: var(--color-primary);
     transform: scaleY(0);
-    transition: transform .4s;
+    transition: transform .3s, 
+                width .4s .3s; // .3s delay, so first it transforms and then grows the width
   }
 
   &__item:hover::before {
     transform: scaleY(1);
+    width: 100%;
   }
 
   &__link:link,
