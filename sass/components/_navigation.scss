@@ -21,12 +21,18 @@
     background-color: var(--color-primary);
     transform: scaleY(0);
     transition: transform .3s, 
-                width .4s .3s; // .3s delay, so first it transforms and then grows the width
+                width .4s cubic-bezier(1,0,0,1) .3s, // .3s delay, so first it transforms and then grows the width
+                background-color .1s;
   }
 
-  &__item:hover::before {
+  &__item:hover::before,
+  &__item--selected::before {
     transform: scaleY(1);
     width: 100%;
+  }
+
+  &__item:active::before {
+    background-color: var(--color-primary-suplight);
   }
 
   &__link:link,
@@ -38,6 +44,8 @@
     padding: 1.5rem 3rem;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 10;
   }
 
   &__icon {
