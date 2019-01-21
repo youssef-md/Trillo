@@ -33,3 +33,19 @@
   flex: 1;
   height: 80rem;//test
 }
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+}
+
+.description {
+  background-color: orangered;
+  flex: 0 0 60%; //flexGrow - flexShrink - 60% of flex container
+  margin-right: 4.5rem;
+}
+
+.user-reviews {
+  background-color: yellowgreen;
+  flex: 1; // occupy the remaining space
+}
