@@ -31,7 +31,6 @@
 .hotel-view {
   background-color: var(--color-grey-light-1);
   flex: 1;
-  height: 80rem;//test
 }
 
 .detail {
@@ -42,6 +41,7 @@
 }
 
 .description {
+  font-size: 1.4rem;
   background-color: white;
   flex: 0 0 60%; //flexGrow - flexShrink - 60% of flex container
   margin-right: 4.5rem;
