@@ -391,14 +391,19 @@ body {
   color: white;
   position: relative;
   overflow: hidden; }
-  .btn__visible {
-    display: inline-block;
-    padding: 2rem 7.5rem; }
-  .btn__invisible {
+  .btn > * {
     display: inline-block;
     padding: 2rem 0;
+    height: 100%;
+    width: 100%;
+    transition: all .2s; }
+  .btn__visible {
+    padding: 2rem 7.5rem; }
+  .btn__invisible {
     position: absolute;
     left: 0;
-    top: -100%;
-    height: 100%;
-    width: 100%; }
+    top: -100%; }
+  .btn:hover .btn__visible {
+    transform: translateY(100%); }
+  .btn:hover .btn__invisible {
+    top: 0; }
