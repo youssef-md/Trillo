@@ -1,12 +1,15 @@
 .review {
-
   background-color: white;
   box-shadow: var(--shadow-light);
   padding: 3rem;
   margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
 
   &__text {
     margin-bottom: 2rem;
+    z-index: 10;
+    position: relative;
   }
 
   &__user {
@@ -41,5 +44,18 @@
     font-size: 2.2rem;
     color: var(--color-primary);
     font-weight: 300;
+  }
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    top: -3.1rem;
+    left: -.8rem;
+    color: var(--color-grey-light-2);
+
+    font-family: sans-serif;
+    font-size: 20rem;
+    line-height: 1;
+    z-index: 1;
   }
 }
