@@ -12,6 +12,7 @@
   --color-grey-dark-3: #999;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .3);
+  --shadow-light-mobile: 0 .5rem 3rem rgba(0, 0, 0, .3);
   --line: 1.5px solid var(--color-grey-light-2); }
 
 * {
@@ -97,7 +98,8 @@ body {
   @media only screen and (max-width: 56.25em) {
     .description {
       padding: 2rem;
-      margin-right: 2rem; } }
+      margin-right: 2rem;
+      box-shadow: var(--shadow-light-mobile); } }
 
 .user-reviews {
   flex: 1;
@@ -373,7 +375,8 @@ body {
   @media only screen and (max-width: 56.25em) {
     .review {
       padding: 2rem;
-      margin-bottom: 3rem; } }
+      margin-bottom: 3rem;
+      box-shadow: var(--shadow-light-mobile); } }
   .review__text {
     margin-bottom: 2rem;
     z-index: 10;
@@ -414,6 +417,9 @@ body {
 .cta {
   padding: 3.5rem 0;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .cta {
+      padding: 2.5rem 0; } }
   .cta__book-now {
     font-size: 2rem;
     font-weight: 300;
