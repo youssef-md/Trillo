@@ -12,6 +12,12 @@
     border-radius: 50%;
     border: 3px solid white;
     
+    @media only screen and (max-width: $bp-medium) {
+      border: 2px solid white;
+      height: 3.25rem;
+      width: 3.25rem;
+    }
+    
     &:not(:last-of-type) {
       margin-right: -2rem;
     }

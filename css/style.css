@@ -362,6 +362,11 @@ body {
     width: 4rem;
     border-radius: 50%;
     border: 3px solid white; }
+    @media only screen and (max-width: 56.25em) {
+      .recommend__photo {
+        border: 2px solid white;
+        height: 3.25rem;
+        width: 3.25rem; } }
     .recommend__photo:not(:last-of-type) {
       margin-right: -2rem; }
 
