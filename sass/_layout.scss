@@ -51,7 +51,7 @@
   border-bottom: var(--line);
 
   @media only screen and (max-width: $bp-medium) {
-    padding: 2rem;
+    padding: 3rem;
   }
 
   @media only screen and (max-width: $bp-small) {
@@ -70,6 +70,11 @@
     padding: 2rem;
     margin-right: 2rem;
     box-shadow: var(--shadow-light-mobile);
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-right: 0;
+    margin-bottom: 3rem;
   }
 }
 
